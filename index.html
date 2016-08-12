@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSite</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo center">My Map</a>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-button" href="#!" data-activates="myaccount">Hi Tom Scholz!<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id='myaccount' class='dropdown-content'>
+                        <li><a href="#!">My pins</a></li>
+                        <li><a href="#!">My account</a></li>
+                        <li><a href="#!">Settings</a></li>
+                        <li><a href="#!">Logout</a></li>
+                    </ul>
+                </ul>
+                <ul id="slide-out" class="side-nav fixed">
+                    <li>
+                        <div class="userView">
+                            <img class="background" src="images/office.jpg">
+                            <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                            <a href="#!name"><span class="white-text name">Tom Scholz</span></a>
+                            <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                    <li><a href="#!">Second Link</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
+                    <li><a class="waves-effect" href="#!">Imprint</a></li>
+                    <li><a class="waves-effect" href="#!">Report a bug</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#map">Map</a></li>
+            <li class="tab col s3"><a href="#list">List</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="map">
+          <div id="map-canvas"></div>
+        </div>
+        <div id="list" class="col s12">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h4>Nearby</h4></li>
+                        <li class="collection-item avatar">
+                            <img src="images/yuna.jpg" alt="" class="circle">
+                            <span class="title">Title</span>
+                            <p>First Line
+                                <br> Second Line
+                            </p>
+                            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle">folder</i>
+                            <span class="title">Title</span>
+                            <p>First Line
+                                <br> Second Line
+                            </p>
+                            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle green">insert_chart</i>
+                            <span class="title">Title</span>
+                            <p>First Line
+                                <br> Second Line
+                            </p>
+                            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle red">play_arrow</i>
+                            <span class="title">Title</span>
+                            <p>First Line
+                                <br> Second Line
+                            </p>
+                            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAzAtpO3V3MDh3rMkW11LKzOI6kKWulEk&callback=initMap" async defer></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
