@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map | Settings</title>
+</head>
+
+<body>
+    <header>
+        <nav role="navigation">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo center">Map</a>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul id="slide-out" class="side-nav fixed">
+                    <li>
+                        <div class="userView">
+                            <img class="background" src="images/office.jpg">
+                            <a href="#!"><img class="circle" src="images/yuna.jpg"></a>
+                            <a href="#!"><span class="white-text name">Tom Scholz</span></a>
+                            <a href="#!"><span class="white-text email">jdandturk@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a class="waves-effect" href="/index.html"><i class="material-icons">home</i>Home</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">location_on</i>locations</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">edit_location</i>Edit locations</a></li>
+                    <div class="downee">
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
+                        <li><a class="waves-effect" href="#!"><i class="material-icons">mode_editq</i>Imprint</a></li>
+                        <li><a class="modal-trigger waves-effect" href="#bugreport"><i class="material-icons">bug_report</i>Report a bug</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <h1>Settings</h1>
+        </div>
+        <div
+      </div>
+    </main>
+
+
+    <div id="bugreport" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Report a bug</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Textarea</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+        </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.2.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <a href="https://github.com/tomscholz/materialize-map"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</body>
+
+</html>
