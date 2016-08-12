@@ -10,13 +10,13 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebSite</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav role="navigation">
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo center">My Map</a>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -32,14 +32,14 @@
                     </li>
                     <li><a class="waves-effect" href="#!"><i class="material-icons">home</i>Home</a></li>
                     <li><a class="waves-effect" href="#!"><i class="material-icons">edit_location</i>Edit locations</a></li>
-<div class="downee">
-                    <li>
-                        <div class="divider"></div>
-                    </li>
-                    <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
-                    <li><a class="waves-effect" href="#!"><i class="material-icons">mode_editq</i>Imprint</a></li>
-                    <li><a class="waves-effect" href="#!"><i class="material-icons">bug_report</i>Report a bug</a></li>
-</div>
+                    <div class="downee">
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
+                        <li><a class="waves-effect" href="#!"><i class="material-icons">mode_editq</i>Imprint</a></li>
+                        <li><a class="modal-trigger waves-effect" href="#bugreport"><i class="material-icons">bug_report</i>Report a bug</a></li>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -49,9 +49,10 @@
         </ul>
     </header>
     <main>
-        <div id="map">
-          <div id="map-canvas"></div>
+        <div id="map" class="col s12">
+            <div id="map-canvas"></div>
         </div>
+
         <div id="list" class="col s12">
             <div class="row">
                 <div class="col s12">
@@ -95,6 +96,47 @@
             </div>
         </div>
     </main>
+
+
+    <div id="bugreport" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Report a bug</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Textarea</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+        </div>
+    </div>
+
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.2.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
