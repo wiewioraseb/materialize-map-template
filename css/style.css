@@ -1,20 +1,25 @@
-#map{
+#map {
     height: 100%;
 }
-
 #map-canvas {
-   height: 83%;
+    height: 83%;
 }
 html, body, main {
-   height: 100% !important;
-   margin: 0;
-   padding: 0;
- }
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+}
 header, main, footer {
-    padding-left: 300px;
+    padding-left: 250px;
 }
 @media only screen and (max-width: 992px) {
     header, main, footer {
         padding-left: 0;
     }
+}
+.downee {
+    bottom: 61px;
+    position: absolute;
+    left: 1px;
+    width: 100%;
 }

@@ -6,8 +6,5 @@ $(document).ready(function() {
       hover: true
     });
     $('.collapsible').collapsible();
-    $('.button-collapse').sideNav({
-     menuWidth: 300
-   }
- );
+    $('.button-collapse').sideNav();
 });
