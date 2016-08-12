@@ -2,10 +2,10 @@
     height: 100%;
 }
 #map-canvas {
-    height: 83%;
+    height: 100%;
 }
 html, body, main {
-    height: 100% !important;
+    height: 94% !important;
     margin: 0;
     padding: 0;
 }
