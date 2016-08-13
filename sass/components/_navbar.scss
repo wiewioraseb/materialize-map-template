@@ -148,7 +148,15 @@ nav {
 
     label {
       top: 0;
-      left: 0;
+
+      @media #{$large-and-up} {
+            top: 0;
+            left: 0;
+      }
+      @media #{$medium-and-down} {
+            top: 0;
+            right: 0;
+      }
 
       i {
         color: rgba(255,255,255,.7);
