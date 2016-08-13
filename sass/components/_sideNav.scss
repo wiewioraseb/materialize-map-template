@@ -74,6 +74,12 @@
     color: rgba(0,0,0,.54);
   }
 
+  .bottom {
+    bottom: 61px;
+    position: absolute;
+    left: 1px;
+    width: 100%;
+  }
   .divider {
     margin: ($sidenav-padding / 2) 0 0 0;
   }
