@@ -17,12 +17,3 @@ header, main, footer {
         padding-left: 0;
     }
 }
-
-.intro {
-    padding: 144px 0;
-    background: url('http://demenzpilot.de/images/bg-map/bg-map-interim-HL.png') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}

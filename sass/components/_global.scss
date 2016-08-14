@@ -779,3 +779,18 @@ nav ul a span.badge {
 .no-padding {
   padding: 0 !important;
 }
+
+.promo {
+    width: 100%;
+    .caption {
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    i {
+        margin: 40px 0;
+        font-size: 7rem;
+        display: block;
+    }
+}
