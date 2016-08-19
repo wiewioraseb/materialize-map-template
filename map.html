@@ -22,13 +22,6 @@
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo center">Map</a>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-                <form>
-                    <div class="input-field">
-                        <input id="search" type="search" required>
-                        <label for="search"><i class="material-icons">search</i></label>
-                        <i class="material-icons">close</i>
-                    </div>
-                </form>
                 <ul id="slide-out" class="side-nav fixed">
                     <li>
                         <div class="userView">
@@ -59,14 +52,21 @@
     </header>
     <main>
         <div id="map" class="col s12">
-            <div id="map-canvas"></div>
+            <div class="search-box hide-on-small-only">
+                <div class="search-wrapper card">
+                    <input id="search"><i class="material-icons search">search</i><i class="material-icons filter">filter_list</i>
+                    <div class="search-results"></div>
+                </div>
+            </div>
+            <div id="map-canvas">
+            </div>
         </div>
 
         <div id="nearby" class="col s12">
             <div class="row">
                 <div class="col s12">
                     <div class="col s12 m4">
-                        <div class="card medium sticky-action">
+                        <div class="card medium sticky-action hoverable">
                             <div class="card-image">
                                 <img src="images/sample-1.jpg">
                                 <span class="card-title">Card Title</span>
@@ -75,13 +75,13 @@
                                 <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div class="card-action">
-                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons">mode_edit</i></button>
+                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons right">mode_edit</i></button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
-                        <div class="card medium sticky-action">
+                        <div class="card medium sticky-action hoverable">
                             <div class="card-image">
                                 <img src="images/sample-1.jpg">
                                 <span class="card-title">Card Title</span>
@@ -90,13 +90,13 @@
                                 <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div class="card-action">
-                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons">mode_edit</i></button>
+                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons right">mode_edit</i></button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
-                        <div class="card medium sticky-action">
+                        <div class="card medium sticky-action hoverable">
                             <div class="card-image">
                                 <img src="images/sample-1.jpg">
                                 <span class="card-title">Card Title</span>
@@ -105,13 +105,13 @@
                                 <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div class="card-action">
-                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons">mode_edit</i></button>
+                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons right">mode_edit</i></button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
-                        <div class="card medium sticky-action">
+                        <div class="card medium sticky-action hoverable">
                             <div class="card-image">
                                 <img src="images/sample-1.jpg">
                                 <span class="card-title">Card Title</span>
@@ -120,13 +120,13 @@
                                 <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div class="card-action">
-                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons">mode_edit</i></button>
+                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons right">mode_edit</i></button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
-                        <div class="card medium sticky-action">
+                        <div class="card medium sticky-action hoverable">
                             <div class="card-image">
                                 <img src="images/sample-1.jpg">
                                 <span class="card-title">Card Title</span>
@@ -135,13 +135,13 @@
                                 <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div class="card-action">
-                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons">mode_edit</i></button>
+                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons right">mode_edit</i></button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
-                        <div class="card medium sticky-action">
+                        <div class="card medium sticky-action hoverable">
                             <div class="card-image">
                                 <img src="images/sample-1.jpg">
                                 <span class="card-title">Card Title</span>
@@ -150,13 +150,13 @@
                                 <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div class="card-action">
-                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons">mode_edit</i></button>
+                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons right">mode_edit</i></button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
-                        <div class="card medium sticky-action">
+                        <div class="card medium sticky-action hoverable">
                             <div class="card-image">
                                 <img src="images/sample-1.jpg">
                                 <span class="card-title">Card Title</span>
@@ -165,7 +165,7 @@
                                 <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div class="card-action">
-                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons">mode_edit</i></button>
+                                <button onclick="showMapButton();" class="right waves-effect waves-light btn" type="button" name="button">View on map<i class="material-icons right">mode_edit</i></button>
                             </div>
                         </div>
                     </div>
@@ -222,7 +222,12 @@
     </script>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='./js/jquery-2.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
     <script type="text/javascript" src="./js/materialize.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAzAtpO3V3MDh3rMkW11LKzOI6kKWulEk&callback=initMap" async defer></script>
     <script type="text/javascript" src="./js/init.js"></script>
