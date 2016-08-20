@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Map | Home</title>
+    <title>MyApp | Home</title>
 </head>
 
 <body>
@@ -21,15 +21,15 @@
         <div class="navbar-fixed">
             <nav role="navigation">
                 <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo center">Map</a>
+                    <a href="#!" class="brand-logo center">MyApp</a>
                     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="./map.html">Backend</a></li>
                         <li><a href="#!">Your Account</a></li>
                     </ul>
                     <ul id="slide-out" class="side-nav">
-                      <li><a class="waves-effect" href="#!">Backend</a></li>
-                      <li><a class="waves-effect" href="#!">Your Account</a></li>
+                        <li><a class="waves-effect" href="#!">Backend</a></li>
+                        <li><a class="waves-effect" href="#!">Your Account</a></li>
                         <div class="bottom">
                             <div class="divider"></div>
                             <li><a class="waves-effect" href="settings.html"><i class="material-icons">settings</i>Settings</a></li>
@@ -62,6 +62,10 @@
 
         <div class="container">
             <div class="row">
+              <h2 class="center">Get the most out of the Materialize</h2>
+              <p class="center flow-text">
+                Materialize is your no.1 Material Design CSS framework. Get involved to be part of something big.
+              </p>
                 <div class="col s12 m4">
                     <div class="center promo">
                         <i class="material-icons">flash_on</i>
@@ -91,11 +95,11 @@
         </div>
         <div class="container">
             <div class="row">
-              <div class="col s12 m6 l7">
-                  <div id="promo-map" class="card-panel">
-                      <div id="map-canvas"></div>
-                  </div>
-              </div>
+                <div class="col s12 m6 l7">
+                    <div id="promo-map" class="card-panel">
+                        <div id="map-canvas"></div>
+                    </div>
+                </div>
                 <div class="col s12 m6 l5">
                     <h3>Our awesome map</h3>
                     <p>
@@ -112,8 +116,10 @@
             <div class="row">
                 <div class="col s12 m6">
                     <h3>Features</h3>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-                        duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
+                    <p>
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+                        nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                    </p>
                 </div>
                 <div class="col s12 m6">
                     <ul class="collapsible popout" data-collapsible="accordion">
@@ -152,7 +158,23 @@
             </div>
         </div>
         <div class="parallax-container">
-            <div class="parallax"><img src="images/parallax3.jpg"></div>
+            <div class="parallax"><img src="images/parallax3.jpg" /></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card-panel valign-wrapper">
+                        <img class="responsive-img" src="images/iMac.png" alt="" />
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <h3>We are here to help!</h3>
+                    <p class="flow-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="page-footer">
@@ -180,8 +202,9 @@
             </div>
         </div>
     </footer>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.2.min.js"></script>
+    <!--Import Javascript-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>if (typeof jQuery == 'undefined') {document.write(unescape("%3Cscript src='/js/jquery-2.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));}</script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAzAtpO3V3MDh3rMkW11LKzOI6kKWulEk&callback=initMap" async defer></script>
     <script type="text/javascript" src="js/init.js"></script>
