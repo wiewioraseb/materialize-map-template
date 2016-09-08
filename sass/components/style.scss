@@ -1,0 +1,96 @@
+// Latest commit widget
+.github-commit {
+    padding: 14px 0;
+    height: 64px;
+    line-height: 36px;
+    background-color: #1a237e;
+    color: hsl(0, 0%, 90%);
+    font-size: 0.9rem;
+}
+@media #{$medium-and-down} {
+    .github-commit {
+        text-align: center;
+    }
+}
+#github-button {
+    background-color: #e4286d;
+    transition: 0.25s ease;
+    &:hover {
+        background-color: #e4286d;
+    }
+}
+.sha {
+    color: hsl(0, 0%, 94%);
+    margin: 0 6px;
+}
+// Landingpage intro image
+.intro {
+    padding: 144px 0;
+    background: url('../images/header-bg.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+
+// Google Maps
+#promo-map {
+    height: 500px;
+}
+#promo-map > #map-canvas {
+    height: 100%;
+}
+#map {
+    height: 100%;
+    position: relative;
+}
+#map-canvas {
+    height: 100%;
+}
+
+
+// Search box in side-nav
+.search-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+    margin-top: 1px;
+    padding: 1px 0 0;
+    z-index: 2;
+    max-width: 400px;
+    .search-wrapper {
+        margin: 0 12px;
+        transition: margin 0.25s ease;
+    }
+    .search-wrapper.focused {
+        margin: 0;
+    }
+    .search-wrapper input#search {
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        width: 100%;
+        height: 45px;
+        margin: 0;
+        padding: 0 45px 0 15px;
+        border: 0;
+    }
+    .search-wrapper input#search:focus {
+        outline: none;
+    }
+    .search-wrapper i.search {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+    .search-wrapper i.filter {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
