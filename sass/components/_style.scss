@@ -90,14 +90,12 @@
         cursor: pointer;
     }
 }
-
 .settings {
     page-break-inside: avoid;
     /* Chrome, Safari, Opera */
     break-inside: avoid;
     /* Firefox */
     padding: 5px;
-
     .card {
         margin: 0;
     }
@@ -109,7 +107,7 @@
         color: $secondary-color;
         display: block;
         border-radius: 4px;
-        padding: 35px 5px 0 5px;
+        padding: 35px 5px 0;
         text-align: center;
         position: relative;
         height: 130px;
@@ -119,5 +117,8 @@
     }
     i {
         font-size: 48px;
+    }
+    h6 {
+      @extend .truncate;
     }
 }
