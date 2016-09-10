@@ -33,8 +33,6 @@
     background-size: cover;
     margin-bottom: 0;
 }
-
-
 // Google Maps
 #promo-map {
     height: 500px;
@@ -49,8 +47,6 @@
 #map-canvas {
     height: 100%;
 }
-
-
 // Search box in side-nav
 .search-box {
     position: absolute;
@@ -92,5 +88,36 @@
         top: 10px;
         right: 10px;
         cursor: pointer;
+    }
+}
+
+.settings {
+    page-break-inside: avoid;
+    /* Chrome, Safari, Opera */
+    break-inside: avoid;
+    /* Firefox */
+    padding: 5px;
+
+    .card {
+        margin: 0;
+    }
+    .item {
+        padding-left: 0 !important;
+    }
+    a {
+        background: $button-disabled-background;
+        color: $secondary-color;
+        display: block;
+        border-radius: 4px;
+        padding: 35px 5px 0 5px;
+        text-align: center;
+        position: relative;
+        height: 130px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    i {
+        font-size: 48px;
     }
 }
