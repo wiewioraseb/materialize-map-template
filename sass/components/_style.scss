@@ -24,14 +24,15 @@
     margin: 0 6px;
 }
 // Landingpage intro image
-.intro {
-    padding: 144px 0;
-    background: url('../images/header-bg.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-bottom: 0;
+#index-banner {
+    padding: 100px 0;
+    .card-panel {
+        width: 80%;
+        max-width: 760px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 2em;
+    }
 }
 // Google Maps
 #promo-map {
@@ -119,6 +120,27 @@
         font-size: 48px;
     }
     h6 {
-      @extend .truncate;
+        @extend .truncate;
     }
+}
+.dropdown-content {
+    min-width: 300px;
+    /* Changed this to accomodate content width */
+}
+.modal {
+    width: 75% !important;
+    max-height: 100% !important;
+    overflow-y: hidden !important;
+}
+/* increase the width, height and prevent vertical scroll! However, i don't recommend this, its better to turn on vertical scrolling. */
+
+
+nav {
+
+  .shadow {
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+      transform: translateZ(0);
+      transition: .3s;
+  }
+
 }
