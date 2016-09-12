@@ -16,3 +16,6 @@ function initMap() {
     streetViewControl: false
   });
 }
+
+
+// HEADER SHADOW
