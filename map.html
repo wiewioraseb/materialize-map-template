@@ -51,20 +51,36 @@
     </header>
     <main>
         <div id="map" class="col s12">
+            <!-- Searchbar -->
             <div class="search-box hide-on-med-and-down">
                 <div class="search-wrapper card">
-                    <input id="search"><i class="material-icons search">search</i><i class="material-icons filter">filter_list</i>
+                    <input id="search"><i class="material-icons search">search</i><a href="#filterDialog" class="modal-trigger"><i class="material-icons filter">filter_list</i></a>
                     <div class="search-results"></div>
                 </div>
             </div>
-            <div id="map-canvas">
-            </div>
 
+            <!-- Mobile Search FAB -->
             <div class="fixed-action-btn hide-on-large-only" style="bottom: 45px; right: 24px;">
-                <a class="btn-floating btn-large red">
-                    <i class="large material-icons">search</i>
+                <a href="#filterDialog" class="btn-floating btn-large red modal-trigger">
+                    <i class="large material-icons">filter_list</i>
                 </a>
             </div>
+
+            <!-- Search Modal -->
+            <div id="filterDialog" class="modalDialog modalDialog-fixed-header">
+                <div class="modal-header">
+                    <i class="material-icons modal-close">close</i>
+                    <a href="#!" class=" modal-action waves-effect waves-red btn-flat">Save filter</a>
+                    <a href="#!" class=" modal-action waves-effect waves-green btn-flat">Reset</a>
+                </div>
+                <div class="modal-content">
+                    <div class="filters">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Google Map -->
+            <div id="map-canvas"></div>
         </div>
 
         <div id="nearby" class="col s12">
@@ -179,7 +195,7 @@
         </div>
     </main>
 
-    <div id="bugreport" class="modal modal-fixed-footer">
+    <div id="bugreport" class="modal modal-fixed-header">
         <div class="modal-content">
             <h4>Report a bug</h4>
             <div class="row">
@@ -210,16 +226,10 @@
             </div>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cancel</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Submit</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancel</a>
         </div>
     </div>
-
-    <script type="text/javascript">
-        function showMapButton() {
-            $('ul.tabs').tabs('select_tab', 'map');
-        }
-    </script>
 
     <!--Import Javascript-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
