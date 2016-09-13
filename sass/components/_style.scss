@@ -1,4 +1,5 @@
 // Latest commit widget
+
 .github-commit {
     padding: 14px 0;
     height: 64px;
@@ -12,20 +13,25 @@
         text-align: center;
     }
 }
+
 #github-button {
     background-color: #e4286d;
     transition: 0.25s ease;
+
     &:hover {
         background-color: #e4286d;
     }
 }
+
 .sha {
     color: hsl(0, 0%, 94%);
     margin: 0 6px;
 }
 // Landingpage intro image
+
 #index-banner {
     padding: 100px 0;
+
     .card-panel {
         width: 80%;
         max-width: 760px;
@@ -35,20 +41,25 @@
     }
 }
 // Google Maps
+
 #promo-map {
     height: 500px;
 }
+
 #promo-map > #map-canvas {
     height: 100%;
 }
+
 #map {
     height: 100%;
     position: relative;
 }
+
 #map-canvas {
     height: 100%;
 }
 // Search box in side-nav
+
 .search-box {
     position: absolute;
     left: 0;
@@ -58,32 +69,38 @@
     padding: 1px 0 0;
     z-index: 2;
     max-width: 400px;
+
     .search-wrapper {
         margin: 0 12px;
         transition: margin 0.25s ease;
     }
+
     .search-wrapper.focused {
         margin: 0;
     }
+
     .search-wrapper input#search {
         display: block;
         font-size: 16px;
         font-weight: 300;
-        width: 100%;
+        width: 79%;
         height: 45px;
         margin: 0;
-        padding: 0 45px 0 15px;
+        padding: 0 40px 0 40px;
         border: 0;
     }
+
     .search-wrapper input#search:focus {
-        outline: none;
+box-shadow: none;
     }
+
     .search-wrapper i.search {
         position: absolute;
         top: 10px;
         left: 10px;
         cursor: pointer;
     }
+
     .search-wrapper i.filter {
         position: absolute;
         top: 10px;
@@ -91,18 +108,22 @@
         cursor: pointer;
     }
 }
+
 .settings {
     page-break-inside: avoid;
     /* Chrome, Safari, Opera */
     break-inside: avoid;
     /* Firefox */
     padding: 5px;
+
     .card {
         margin: 0;
     }
+
     .item {
         padding-left: 0 !important;
     }
+
     a {
         background: $button-disabled-background;
         color: $secondary-color;
@@ -116,31 +137,31 @@
         margin-bottom: 10px;
         margin-right: 0;
     }
+
     i {
         font-size: 48px;
     }
+
     h6 {
         @extend .truncate;
     }
 }
+
 .dropdown-content {
     min-width: 300px;
     /* Changed this to accomodate content width */
 }
+
 .modal {
     width: 75% !important;
     max-height: 100% !important;
     overflow-y: hidden !important;
 }
 /* increase the width, height and prevent vertical scroll! However, i don't recommend this, its better to turn on vertical scrolling. */
-
-
 nav {
-
-  .shadow {
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
-      transform: translateZ(0);
-      transition: .3s;
-  }
-
+    .shadow {
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+        transform: translateZ(0);
+        transition: 0.3s;
+    }
 }

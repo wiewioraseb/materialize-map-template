@@ -21,3 +21,7 @@ $(window).scroll(function() {
         $(".nav-wrapper").removeClass("shadow");
     }
 });
+
+function showMapButton() {
+    $('ul.tabs').tabs('select_tab', 'map');
+}
