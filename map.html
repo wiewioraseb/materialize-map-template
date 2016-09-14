@@ -52,10 +52,26 @@
     <main>
         <div id="map" class="col s12">
             <!-- Searchbar -->
-            <div class="search-box hide-on-med-and-down">
+            <div class="search-box">
+                <!-- hide-on-med-and-down -->
                 <div class="search-wrapper card">
-                    <input id="search"><i class="material-icons search">search</i><a href="#filterDialog" class="modal-trigger"><i class="material-icons filter">filter_list</i></a>
-                    <div class="search-results"></div>
+                    <input onfocus="document.getElementById('searchResults').style.display='block';" onblur="document.getElementById('searchResults').style.display='none';" id="search"><i class="material-icons search">search</i>
+                    <a href="#filterDialog" class="modal-trigger"><i class="material-icons filter">filter_list</i></a>
+                    <!-- Search results -->
+                    <div id="searchResults" class="search-results">
+                        <ul>
+                            <li class="divider"></li>
+                            <li>
+                                <i class="material-icons">restore</i>Just the two of us
+                            </li>
+                            <li>
+                                <i class="material-icons">restore</i>Valerie
+                            </li>
+                            <li>
+                                <i class="material-icons">restore</i>I gotta feeling
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -75,7 +91,7 @@
                 </div>
                 <div class="modal-content">
                     <div class="filters">
-                        
+
                     </div>
                 </div>
             </div>
