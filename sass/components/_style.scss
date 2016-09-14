@@ -1,3 +1,12 @@
+// Basics
+
+body,
+html,
+main {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+}
 // Latest commit widget
 
 .github-commit {
@@ -163,5 +172,33 @@ nav {
         box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
         transform: translateZ(0);
         transition: 0.3s;
+    }
+}
+.nav-wrapper-shadow {
+  @extend .shadow;
+  @extend .nav-wrapper;
+}
+
+.forgot,
+.login,
+.register {
+
+    .login-row {
+        @extend .row;
+        margin-bottom: 0;
+    }
+
+    h5 {
+        font-weight: 300;
+    }
+
+    .col.indigo {
+        padding: 10% 5%;
+        @media #{$small-and-down} {
+            height: auto;
+        }
+        @media #{$medium-and-up} {
+            height: 100%;
+        }
     }
 }
