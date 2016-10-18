@@ -9,6 +9,11 @@
     <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen" />
     <link type="text/css" rel="stylesheet" href="/css/style.css" media="screen" />
 
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <!-- ClockPicker Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-clockpicker.min.css">
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,7 +96,13 @@
                 </div>
                 <div class="modal-content">
                     <div class="filters">
-
+                        <div style="width: 100px" class="input-group clockpicker" data-placement="bottom" data-align="top"
+                             data-autoclose="true">
+                            <input type="text" class="form-control" value="12:00">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,13 +222,26 @@
         </div>
     </main>
 
+    <!-- jQuery and Bootstrap scripts -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- ClockPicker script -->
+    <script type="text/javascript" src="js/bootstrap-clockpicker.min.js"></script>
+
     <!--Import Javascript-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="/js/materialize.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAzAtpO3V3MDh3rMkW11LKzOI6kKWulEk&callback=initMap" async defer></script>
     <script type="text/javascript" src="/js/init.js"></script>
     <script type="text/javascript" src="/js/custom.js"></script>
     <script type="text/javascript" src="/js/map.js"></script>
+
+    <script type="text/javascript">
+        $('.clockpicker').clockpicker()
+                .find('input').change(function () {
+            // TODO: time changed assigned to value
+            console.log(this.value);
+        });
+    </script>
 </body>
 
 </html>
